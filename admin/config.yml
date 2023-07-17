@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: lindsoda/lindsoda.github.io
+  repo: lindsoda/lindsey-portfolio
   branch: main
   site_domain: lindseys-portfolio.netlify.com
 
