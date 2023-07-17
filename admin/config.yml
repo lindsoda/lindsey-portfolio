@@ -4,6 +4,7 @@ backend:
   branch: main
   site_domain: lindseys-portfolio.netlify.com
 
+media_folder: /img/uploads
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
