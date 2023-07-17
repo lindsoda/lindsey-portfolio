@@ -4,16 +4,18 @@ backend:
   branch: main
   site_domain: lindseys-portfolio.netlify.com
 
-media_folder: "/img"
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Project" # Used in the UI
     folder: "_posts/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    media_folder: "/img/projects/{{slug}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Banner", name: "banner", widget: "image"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
