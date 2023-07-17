@@ -6,7 +6,6 @@ thumbnail: poster-mock-thumb.jpg
 alt: poster mockup of music icons
 ---
 
-## Poster Series: Music Icons
 For this poster series I wanted to use fabric to emphasize the struggles that each music icon went through. By incorporating imagery of fabrics that each musician would wear, I hope the viewer will feel closer to the musician and sympathize with their struggles.
 
 ## Sketching and Initial Ideas

@@ -5,4 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon.png" type="image/png">
   <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.excerpt }}" />
+  {% if page.thumbnail %}
+  <meta property="og:image" content="/img/projects/{{ page.slug }}/{{ page.thumbnail }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+
+  <!-- Twitter -->
+  <meta property="twitter:url" content="{{ site.url }}" />
+  <meta property="twitter:title" content="{{ page.title }}" />
+  <meta property="twitter:description" content="{{ page.excerpt }}" />
+
+  <!-- Discord Color -->
+  <meta name="theme-color" content="#FFFFFF">
 </head>
