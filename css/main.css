@@ -61,11 +61,24 @@ h5 {font-size: 1.25rem;}
 
 /* Header */
 #top-bar {
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 4rem 2rem;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+#top-bar nav ul {
+    height: 100%;
+}
+
+#top-bar nav li {
+    display: inline-block;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+    height: 100%;
 }
 
 #top-bar h1,
@@ -73,45 +86,26 @@ h5 {font-size: 1.25rem;}
     display: inline-block;
 }
 
-#top-bar nav li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-#hero {
-    width: 100%;
-    padding: 4rem;
-    margin-bottom: 1rem;
-}
-
 #hero .inner {
-    display: flex;
-    align-items: center;
-    max-width: 60%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
-#hero .left {
-    max-width: 50%;
-    padding-right: 1rem;
-    margin-right: auto;
-}
-
-#hero .right {
-    position: relative;
-    max-width: 35%;
+#hero img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Main content */
 main {
-    width: 55%;
+    width: 95%;
     margin: 0 auto;
 }
 
-
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-grid img {
@@ -158,10 +152,6 @@ main {
     max-width: 12rem;
 }
 
-.right {
-    float: right;
-}
-
 .banner {
     max-width: 100%;
     width: 100%;
@@ -206,4 +196,97 @@ footer {
 
 .text-center {
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    }
+    
+    .portfolio-grid img {
+        max-width: 100%;
+    }
+    
+    .portfolio-figure {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        text-align: center;
+        position: relative;
+        height: fit-content;
+    }
+    
+    .portfolio-figure .overlay {
+        position: absolute;
+        transition: 0.2s ease;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        vertical-align: bottom;
+        opacity: 0;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 0.5rem;
+    }
+    
+    .portfolio-figure:hover .overlay {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #top-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 2rem;
+    }
+    
+    #top-bar h1,
+    #top-bar nav {
+        display: inline-block;
+    }
+    
+    #top-bar nav li {
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    #hero {
+        width: 100%;
+        padding: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    #hero .inner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+    #hero .left {
+        max-width: 50%;
+        padding-right: 1rem;
+        margin-right: auto;
+    }
+    
+    #hero .right {
+        position: relative;
+        max-width: 35%;
+    }
+    
+    main {
+        width: 55%;
+        margin: 0 auto;
+    }
 }
