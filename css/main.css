@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url("https://use.typekit.net/zjf4pld.css");
+
+/* Reset CSS */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    line-height: 1.3;
+
+    overflow-x: hidden;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+h1,h2,h3,
+h4,h5,h6 {
+    font-family: "Degular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+/* Header */
+#top-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+}
+
+#top-bar h1,
+#top-bar nav {
+    display: inline-block;
+}
+
+#top-bar nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+#hero {
+    width: 100%;
+    padding: 4rem;
+    margin-bottom: 1rem;
+}
+
+#hero .inner {
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#hero .left {
+    max-width: 50%;
+    padding-right: 1rem;
+    margin-right: auto;
+}
+
+#hero .right {
+    position: relative;
+    max-width: 35%;
+}
+
+/* Main content */
+main {
+    width: 55%;
+    margin: 0 auto;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.portfolio-grid img {
+    max-width: 100%;
+}
+
+.portfolio-figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    text-align: center;
+    position: relative;
+    height: fit-content;
+}
+
+.portfolio-figure .overlay {
+    position: absolute;
+    transition: 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    vertical-align: bottom;
+    opacity: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+.portfolio-figure:hover .overlay {
+    opacity: 1;
+}
+
+.rounded {
+    border-radius: 0.5rem;
+}
+
+.large {
+    max-width: 12rem;
+}
+
+.right {
+    float: right;
+}
+
+.banner {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: 70vh;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 0.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    width: 2rem;
+}
+
+#contact {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+#contact li {
+    margin: 0 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: #DCDCDC;
+}
+
+.text-center {
+    text-align: center;
+}

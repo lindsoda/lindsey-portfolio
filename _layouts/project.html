@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body id="page-top" class="index">
+  {% include header.html %}
+  
+  <img src="/img/projects/{{ page.slug }}/{{ page.banner }}" alt="{{ page.banner-alt }}" class="banner">
+  <main>
+	  {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+
+</html>

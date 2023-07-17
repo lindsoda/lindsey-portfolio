@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body id="page-top" class="index">
+  {% include header.html %}
+  {% include hero.html %}
+  <main>
+    <article id="portfolio">
+      <header>
+        <h2>Portfolio</h2>
+      </header>
+      <section class="portfolio-grid">
+        {% for post in site.posts %}
+            <figure class="portfolio-figure">
+              <a href="{{ post.url }}" class="overlay">{{ post.title }}</a>
+              <img src="img/projects/{{ post.slug }}/{{ post.thumbnail }}" alt="{{ post.alt }}" class="rounded">
+            </figure>
+        {% endfor %}
+      </section>
+    </article>
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

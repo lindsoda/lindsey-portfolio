@@ -1,0 +1,61 @@
+# Site settings
+title: Lindsey Barnett
+email: your-email@domain.com
+url: https://github.com/jeromelachaud/freelancer-theme
+description: "Hello! I am a Communication Design student at the University of Cincinnati. I am a sophomore, and I am extremely passionate about my studies. Right now, I hope to learn more about different aspects of the design field through my future co-op placements. Outside of school, I have two cats that I spend time with, and I love playing the violin."
+keywords: "your keywords, separated by commas"
+skills: "Web Developer - Graphic Artist - User Experience Designer"
+meta_author: LastName FirstName
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Lindsey Barnett
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: facebook
+    url:
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/projects/:title"
