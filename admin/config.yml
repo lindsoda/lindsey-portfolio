@@ -19,4 +19,5 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Banner", name: "banner", widget: "image"}
       - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Banner Alt Text", name: "banner-alt", widget: "string", default: ""}
       - {label: "Body", name: "body", widget: "markdown"}

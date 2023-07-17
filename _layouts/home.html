@@ -14,7 +14,7 @@
         {% for post in site.posts %}
             <figure class="portfolio-figure">
               <a href="{{ post.url }}" class="overlay">{{ post.title }}</a>
-              <img src="img/projects/{{ post.slug }}/{{ post.thumbnail }}" alt="{{ post.alt }}" class="rounded">
+              <img src="{{ post.thumbnail }}" alt="{{ post.alt }}" class="rounded">
             </figure>
         {% endfor %}
       </section>
