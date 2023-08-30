@@ -4,6 +4,7 @@ backend:
   branch: main
   site_domain: lindseys-portfolio.netlify.com
 
+publish_mode: editorial_workflow
 media_folder: /img/uploads
 
 collections:
