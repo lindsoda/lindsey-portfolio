@@ -13,7 +13,7 @@
       <section class="portfolio-grid">
         {% for post in site.posts %}
             <figure class="portfolio-figure">
-              <a href="/assets/{{ post.url }}" class="overlay">{{ post.title }}</a>
+              <a href="{{ post.url }}" class="overlay">{{ post.title }}</a>
               <img src="/assets/{{ post.thumbnail }}" alt="{{ post.alt }}" class="rounded">
             </figure>
         {% endfor %}
