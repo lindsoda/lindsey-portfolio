@@ -1,0 +1,62 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+            "title": "Layout",
+            "name": "layout",
+            "type": "choice",
+            "choices": ["project"]
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Banner Image",
+          "name": "banner",
+          "type": "image"
+        },
+        {
+            "title": "Thumbnail Image",
+            "name": "thumbnail",
+            "type": "image",
+            "isPreviewImage": true
+          },
+        {
+          "title": "Is draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Alt text",
+          "name": "alt",
+          "type": "string",
+          "single": true
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "jekyll",
+  "frontMatter.content.publicFolder": "assets",
+  "frontMatter.preview.host": "http://localhost:4000/",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "projects",
+      "path": "[[workspace]]/_posts"
+    }
+  ]
+}
